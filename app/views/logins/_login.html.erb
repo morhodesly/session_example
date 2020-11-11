@@ -1,0 +1,11 @@
+<tr id="<%= dom_id(login) %>" scope="row">
+  <td><%= device_description(login.user_agent) %></td>
+  <td><%= login.ip_address %></td>
+  <td><%= device_location(login.ip_address) %></td>
+  <td><%= time_ago_in_words(login.updated_at) %></td>
+  <td>
+    <% if login.device_id == cookies[:device_id] %>
+      (Current session)
+    <% end %>
+  </td>
+</li>

@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Active sessions</h2>
+  These are the devices currently signed in to your account:
+  <br /><br />
+  <table id="logins" class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">Device</th>
+        <th scope="col">IP Address</th>
+        <th scope="col">Approximate location</th>
+        <th scope="col">Most recent activity</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @logins %>
+    </tbody>
+  </table>
