@@ -1,5 +1,3 @@
-== README
-
 This is example to show how limit a session wiht X number.
 Gem Using:
 * devise
