@@ -46,6 +46,11 @@ group :development do
 end
 
 
+group :development, :test do
+  gem 'rspec-rails', '~> 2.14.0'
+end
+
+gem 'rake', '< 11.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

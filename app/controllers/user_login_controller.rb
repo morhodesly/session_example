@@ -39,7 +39,7 @@ class UserLoginController < Devise::SessionsController
 
     sign_out(current_user)
     flash[:notice] = "Successfully signed out."
-    redirect_to root_path
+    redirect_to new_user_session_path
     
   end
 end
